@@ -2,7 +2,7 @@
 
 rm -rf ~/.nexus
 sudo apt install cargo -y
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl https://sh.rustup.rs -sSf | sh -s -- -y
 source $HOME/.cargo/env
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
